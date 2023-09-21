@@ -149,3 +149,11 @@ footer {
     color: #FFFFFF; /* White footer text */
     font-weight: bold;
 }
+
+/* Media query for screens with a maximum width of 768px (typical mobile devices) */
+@media (max-width: 768px) {
+    /* Fügen Sie hier Anpassungen für Handys hinzu */
+    body {
+        font-size: 16px; /* Beispiel: Ändern der Schriftgröße für mobile Geräte */
+    }
+}
