@@ -3,6 +3,12 @@ body, h1, h2, p {
     margin: 0;
     padding: 0;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 @font-face {
   font-family: "ApplyingAIFont";
   src: url("/assets/fonts/Mooli-Regular.ttf");
