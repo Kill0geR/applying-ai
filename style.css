@@ -26,29 +26,51 @@ nav {
 }
 
 .logo img {
-    width: 220px; /* Adjust the logo size as needed */
+    height: 80px; /* Adjust the logo size as needed */
 }
 
 .nav-links ul {
     list-style: none;
+    padding: 0;
+    display: flex; /* Use flexbox to align items */
 }
 
 .nav-links li {
     display: inline;
-    margin-right: 20px;
+    position: relative;
 }
 
 .nav-links a {
     text-decoration: none;
     color: #FF6600; /* Orange text */
     font-weight: bold;
-    transition: color 0.3s;
+    padding: 0 10px; /* Add horizontal padding to space out links */
+    position: relative;
+    background-image: linear-gradient(to left, #888 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: left bottom;
+    transition: background-position 0.3s;
 }
 
+/* Add a vertical line separator */
+.nav-links li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    width: 2px; /* Adjust the line thickness as needed */
+    height: 100%; /* Make the line span the full height of the navigation bar */
+    background-color: #888; /* Subtle gray color for the line */
+    top: 0;
+    left: -5px; /* Adjust the spacing as needed */
+    bottom: 0;
+    z-index: 0; /* Place the separator below the links */
+}
+
+/* Add background highlight effect on hover */
 .nav-links a:hover {
-    color: #FF9900; /* Lighter orange on hover */
+    background-position: right bottom;
+    color: #888; /* Change text color on hover */
+    transition: background-position 0.3s; /* Reverse the animation */
 }
-
 .hero {
     max-width: 1200px;
     margin: 0 auto;
@@ -148,10 +170,4 @@ footer {
     text-decoration: none;
     color: #FFFFFF; /* White footer text */
     font-weight: bold;
-}
-
-@media (max-width: 768px) {
-    body {
-        font-size: 16px; 
-    }
 }
