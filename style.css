@@ -5,7 +5,7 @@ body, h1, h2, p {
 }
 @font-face {
   font-family: "ApplyingAIFont";
-  src: url(assets/fonts/Mooli-Regular.ttf);
+  src: url("/assets/fonts/Mooli-Regular.ttf");
 }
 /* Set a background color and font for the entire page */
 body {
