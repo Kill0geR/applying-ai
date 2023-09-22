@@ -99,7 +99,14 @@ nav {
     opacity: 0; /* Initially set opacity to 0 */
     animation: fadeIn 1s ease-in-out forwards; /* Apply fade-in animation */
 }
-
+.moving {
+  width: 100%;
+  height: 250px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* Style the video itself */
 .hero-video video {
     max-width: 80%;
@@ -154,4 +161,8 @@ footer {
     text-decoration: none;
     color: #FFFFFF; /* White footer text */
     font-weight: bold;
+}
+.ml13 .letter {
+    display: inline-block;
+    line-height: 1em;
 }
