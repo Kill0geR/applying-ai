@@ -9,6 +9,10 @@ img {
     height: auto;
 }
 
+text {
+    height: auto;
+}
+
 @font-face {
   font-family: "ApplyingAIFont";
   src: url("/assets/fonts/Mooli-Regular.ttf");
