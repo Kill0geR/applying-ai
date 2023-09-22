@@ -9,7 +9,7 @@ body, h1, h2, p {
 }
 /* Set a background color and font for the entire page */
 body {
-    font-family: Arial, sans-serif;
+    font-family: ApplyingAIFont
     background-color: #333333; /* Dark gray background */
     color: #FFFFFF; /* White text */
 }
