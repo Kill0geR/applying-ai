@@ -53,7 +53,7 @@ nav {
 }
 
 /* Add a vertical line separator */
-.nav-links li:not(:last-child)::after {
+.nav-links li::before {
     content: "";
     position: absolute;
     width: 2px; /* Adjust the line thickness as needed */
@@ -63,6 +63,11 @@ nav {
     left: -5px; /* Adjust the spacing as needed */
     bottom: 0;
     z-index: 0; /* Place the separator below the links */
+}
+
+/* Remove separator from the first link */
+.nav-links li:first-child::before {
+    content: none;
 }
 
 /* Add background highlight effect on hover */
