@@ -149,10 +149,9 @@ nav {
 .hero-video video {
     max-width: 80%;
     height: auto;
+    background-color: rgba(34, 34, 34, 1);
 }
-.hero-video{
-    background-color: rgba(34, 34, 34, 0.9);
-}
+
 .hero-video img {
     max-width: 80%;
     height: auto;
