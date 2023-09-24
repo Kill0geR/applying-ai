@@ -8,6 +8,8 @@ function updateTextContent() {
   textWrapper.textContent = textItems[currentItemIndex];
   currentItemIndex = (currentItemIndex + 1) % textItems.length;
   textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>"); // Reapply letter wrapping
+
+
 }
 
 
