@@ -1,4 +1,4 @@
-const textItems = ["Text 1", "Text 2", "Text 3", "Text 4"];
+const textItems = ["Lebenslauf-Analyse mit KI", "KI-Bewerbungsassistent", "Automatisierte Bewerbungshilfe", "Effizientes Bewerben"];
 let currentItemIndex = 0;
 
 var textWrapper = document.querySelector('.ml13');
@@ -8,8 +8,6 @@ function updateTextContent() {
   textWrapper.textContent = textItems[currentItemIndex];
   currentItemIndex = (currentItemIndex + 1) % textItems.length;
   textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>"); // Reapply letter wrapping
-
-
 }
 
 
@@ -30,7 +28,7 @@ function startTextAnimation() {
     translateY: [0,-100],
     opacity: [1,0],
     easing: "easeInExpo",
-    duration: 1200,
+    duration: 700,
     delay: (el, i) => 100 + 30 * i
   });
 
