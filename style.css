@@ -25,9 +25,8 @@ html{
 body {
 
   background-attachment: fixed;
-    background-image: url("assets/BG.png");
     font-family: "ApplyingAIFont";
-    background-color: #333333; /* Dark gray background */
+    background-color: #2733BC; /* Blue background */
     color: #E0E0E0; /* White text */
 }
 
