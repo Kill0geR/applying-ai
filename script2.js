@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 window.addEventListener('scroll', function () {
   const scrollTop = window.scrollY;
+
   if (scrollTop > lastScrollTop) {
     // Scrolling down, hide the header immediately
     if(autoscrolling===false){
@@ -48,7 +49,11 @@ window.addEventListener('scroll', function () {
     // Set a timeout to hide the header after 1 second
     clearTimeout(timeoutId); // Clear any previous timeout
     timeoutId = setTimeout(function () {
+
+      if(scrollTop <= 10){
+      } else{
       header.classList.remove('show-header');
+    }
     }, 3000); // 1000 milliseconds = 1 second
   }
   lastScrollTop = scrollTop;
