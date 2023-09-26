@@ -23,6 +23,7 @@ html{
 }
 /* Set a background color and font for the entire page */
 body {
+  cursor: default; /* or cursor: pointer; */
 
   background-attachment: fixed;
     font-family: "ApplyingAIFont";
@@ -43,6 +44,7 @@ transition: opacity 0.3s ease-in-out;
       justify-content: center; /* Center the content horizontally */
       align-items: center; /* Center the content vertically */
       overflow-y: hidden;
+
 }
 .show-header {
   opacity: 1;
@@ -50,6 +52,8 @@ transition: opacity 0.3s ease-in-out;
 header:hover {
   opacity: 1;
 }
+
+
 
 nav {
     display: flex;
@@ -133,6 +137,7 @@ nav {
 
 /* Style the video section */
 .video-section {
+  background-color: rgba(34, 34, 34, 1);
     text-align: center;
     opacity: 0; /* Initially set opacity to 0 */
     animation: fadeIn 1s ease-in-out forwards; /* Apply fade-in animation */
@@ -151,7 +156,8 @@ nav {
 }
 
 .hero-video img {
-    max-width: 80%;
+
+    max-width: 100%
     height: auto;
     margin-bottom: 20px;
     -webkit-mask-image: radial-gradient(ellipse 90% 100% at 50% 50%, black 0%, transparent 60%);
@@ -172,15 +178,41 @@ nav {
   z-index: 10
 }
 /* Style the About Us section */
-.about-us {
+.about-us{
     max-width: 1200px;
     margin: 0 auto;
     padding: 60px 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
+
 }
 
+.contact-info {
+    float: left; /* Align to the left */
+    margin-right: 20px; /* Add some spacing between the logo and contact info */
+}
+
+.contact-info ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin-bottom: 10px; /* Add some spacing between each contact item */
+}
+
+.about-us-text{
+  max-width: 300px;
+  margin-right: 10px;
+  margin-left: 10px;
+
+}
+.person{
+    margin-top: -25px;
+}
+.job-title{
+  font-size: 12px;
+    color: #bc6b26;
+}
 .about-us h2 {
     font-size: 2rem;
     margin-bottom: 20px;
@@ -189,6 +221,51 @@ nav {
 .about-us p {
     font-size: 1.2rem;
     margin-bottom: 30px;
+}
+.about-us-image{
+  width: 100%;
+}
+.about-us-card {
+    border-radius: 15px;
+    max-width: 200px;
+    outline-color: #bc6b26;
+    outline-style: solid;
+    outline-width: thick;
+    transition: all .2s ease-in-out;
+    overflow: hidden; /* Hide overflowing content */
+}
+.about-us-card .replacement-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    color: #ffffff;
+    text-align: center;
+    transition: all .2s ease-in-out;
+    transform: translateY(-100%); /* Initially move text element above the card */
+}
+
+.about-us-card:hover {
+    transform: scale(1.1); /* Move content down by 20px on hover */
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
+
+.about-us-text,
+.about-us-image {
+    transition: all .2s ease-in-out; /* Apply transition to child elements */
+}
+.about-us-card:hover .about-us-text,
+.about-us-card:hover .about-us-image {
+    opacity: 1; /* Make child elements disappear on hover */
+    transform: translateY(310px); /* Move child elements down by 20px on hover */
+}
+
+.about-us-card:hover .replacement-text {
+    height: 100%; /* Expand the replacement text to fill the card */
+    opacity: 1; /* Make the replacement text visible */
+    transform: translateY(0); /* Move the replacement text to its original position */
 }
 
 /* Style the footer */
@@ -216,4 +293,41 @@ footer {
 .ml13 .letter {
     display: inline-block;
     line-height: 1em;
+}
+
+/* Adjust main content to account for sidebar */
+
+/* The sidebar menu */
+.sidenav {
+  z-index: 100;
+  width: 30px; /* Set the width of the sidebar */
+  background-color: rgba(34, 34, 34, 1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center horizontally */
+
+}
+
+/* Progress Bar Styles */
+.progress-container {
+  width: 8px;
+  height: 100%;
+  background: #ccc;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 70%;
+  background: #FF6600;
+  width: 8px;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }

@@ -29,11 +29,24 @@
             <ul class="nav-links">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Services</a></li>
-                <li><a href="#">About Us</a></li>
+                <li><a href="javascript:scroll_to('#about-us-section')">About Us</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
+
+    <div class="sidenav">
+    <div class="progress-bar">
+      <div class="progress-container">
+      <div class="progress-bar" id="myBar" style="height: 0%;"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rest of your HTML content goes here -->
+
+
+<!-- Page content -->
 
     <section class="hero">
     <div class="hero-text">
@@ -51,11 +64,14 @@
 
     </div>
 </section>
-    <div class="hero-text" style="text-align:center;">
-      <h2><i>So schreibt ApplyingAI Ihre Bewerbung:</i></h2>
-    </div>
-    <br><br>
+
 <section class="video-section">
+  <br>
+
+  <div class="hero-text" style="text-align:center;">
+    <h2><i>So schreibt ApplyingAI Ihre Bewerbung:</i></h2>
+  </div>
+  <br>
     <div class="hero-video">
         <video controls autoplay muted loop>
             <source src="assets/example.mp4" type="video/mp4">
@@ -64,20 +80,64 @@
     </div>
 </section>
 
-    <section class="about-us">
+    <section class="about-us" id="about-us-section">
         <div class="about-us-text">
             <h2>About Us</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pretium pharetra quam nec tempus.</p>
             <a href="#" class="cta-button">Learn More</a>
         </div>
-        <div class="about-us-image">
-            <img src="about-us-image.jpg" alt="Team at Applying.AI">
+        <div class="about-us-card">
+
+          <div class="replacement-text">
+          <!-- Add your replacement text content here -->
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pretium pharetra quam nec tempus.</p>
         </div>
+        <div class="about-us-text">
+          <h5 class="job-title">FOUNDER</h5>
+          <h4 class="person">Fawaz Bashiru</h4>
+
+        </div>
+        <div class="about-us-image">
+            <img src="assets/fawaz_1.jpg" alt="Team at Applying.Ai">
+        </div>
+
+        </div>
+        <div style="width: 100px">
+
+        </div>
+        <div class="about-us-card">
+
+        <div class="about-us-text">
+          <h5 class="job-title">WEB DESIGN</h5>
+          <h4 class="person">Dimitri Sidirov</h4>
+
+        </div>
+        <div class="about-us-image">
+            <img src="assets/dyma.jpeg" alt="Team at Applying.Ai">
+        </div>
+      </div>
+
     </section>
+
 
     <!-- Add more sections as needed -->
 
     <footer>
+      <section class="contact" id="contact-section">
+          <div class="contact-text">
+              <h2>Contact</h2>
+          </div>
+          <div class="contact-info">
+                  <ul>
+                      <li>Email: contact@example.com</li>
+                      <li>Phone: +1 123-456-7890</li>
+                      <li>Address: 123 Street, City, Country</li>
+                  </ul>
+              </div>
+
+          <a href="#" class="cta-button">Learn More</a>
+
+      </section>
         <div class="footer-logo">
             <img src="assets/logo.png" alt="Applying.AI Logo">
         </div>
