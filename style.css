@@ -34,7 +34,7 @@ body {
 /* Style the header navigation */
 header {
   opacity: 0;
-transition: opacity 0.3s ease-in-out;
+transition: opacity 0.3s ease-in-out 1s;
   background-color: rgba(34, 34, 34, 0.9); /* Dark gray header background */
       padding: 10px 0;
       position: sticky;
@@ -331,3 +331,5 @@ footer {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
+
