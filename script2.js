@@ -6,7 +6,6 @@ let lastScrollTop = 0; // Declare lastScrollTop
 
 document.addEventListener('DOMContentLoaded', function () {
   const heroImage = document.querySelector('.hero-video img');
-  const scrollTarget = document.querySelector('.cta-button');
   animating = true;
   const scrollPosition = scrollTarget.getBoundingClientRect().top + window.scrollY - (window.innerHeight / 2);
 
