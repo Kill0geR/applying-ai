@@ -1,15 +1,16 @@
 let prevScrollPos = window.pageYOffset;
+const header = document.querySelector("header");
 
 window.onscroll = function() {
     let currentScrollPos = window.pageYOffset;
 
     if (prevScrollPos > currentScrollPos) {
-        // Scrollt nach oben
-        document.querySelector("header").style.top = "0";
+        header.style.top = "0";
     } else {
-        // Scrollt nach unten
-        document.querySelector("header").style.top = "-220px";
+        header.style.top = "-220px";
     }
 
     prevScrollPos = currentScrollPos;
-}
+};
+
+header.style.transition = "top 0.3s ease-in-out";
