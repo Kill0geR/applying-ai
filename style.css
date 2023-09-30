@@ -38,11 +38,21 @@ color:#FC7E27;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 600px;
+    height: 60vh;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.parallax-section {
+    background-size: cover;
+}
+
+@media only screen and (max-width: 768px) {
+    .parallax-section {
+        background-size: contain;
+    }
 }
 
 .parallax-text {
@@ -187,7 +197,7 @@ background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 700px;
+    height: 70%;
     position: relative;
     display: flex;
     align-items: center;
@@ -197,6 +207,13 @@ background-attachment: fixed;
     opacity: 0;
     animation: fadeIn 1s ease-in-out forwards;
 }
+
+@media only screen and (max-width: 768px) {
+    .video-section {
+        background-size: contain;
+    }
+}
+
 .moving {
   width: 400px;
   margin: 0px;
