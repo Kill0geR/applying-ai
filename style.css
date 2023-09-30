@@ -90,17 +90,15 @@ body {
 
 /* Style the header navigation */
 header {
-  opacity: 0;
-transition: opacity 0.3s ease-in-out 1s;
-  background-color: rgba(34, 34, 34, 0.9); /* Dark gray header background */
-      padding: 10px 0;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      display: flex;
-      justify-content: center; /* Center the content horizontally */
-      align-items: center; /* Center the content vertically */
-      overflow-y: hidden;
+  background-color: rgba(34, 34, 34, 0.9);
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: opacity 0.3s ease-in-out 1s;
 
 }
 .show-header {
@@ -110,6 +108,20 @@ header:hover {
   opacity: 1;
 }
 
+/* Add this to your existing CSS */
+
+.hero-text h1 {
+    font-size: 200px;
+    margin-left: 0; /* Set the default margin-left value */
+}
+
+/* Media query for screens larger than 768px (adjust as needed) */
+@media only screen and (min-width: 769px) {
+    .hero-text h1 {
+        font-size: inherit; /* Revert to the default size for larger screens */
+        margin-right: 120px; /* Set the desired margin-left for larger screens */
+    }
+}
 
 
 nav {
@@ -121,32 +133,60 @@ nav {
 }
 
 .logo img {
-    width: 220px; /* Adjust the logo size as needed */
+    width: 100%;
+    max-width: 180px;
 }
 .hide {
   display: none;
 }
-.nav-links ul {
-    list-style: none;
-    width: 600px
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
 
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
 }
 
 .nav-links li {
-    display: inline;
-    margin-right: 20px;
+    margin-right: 15px;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: #bc6b26; /* Orange text */
+    color: #FC7E27;
     font-weight: bold;
-    transition: color 0.3s;
 }
 
-.nav-links a:hover {
-    color: #FF9900; /* Lighter orange on hover */
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-bottom: 5px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
 }
+
 
 .hero {
     max-width: 1200px;
@@ -249,7 +289,7 @@ background-attachment: fixed;
     }
 
 .hero-text{
-  z-index: 10
+  z-index: 5;
 }
 /* Style the About Us section */
 .about-us{
@@ -261,24 +301,24 @@ background-attachment: fixed;
 }
 
 .about-us {
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
 .about-us-card {
-    width: 100%; 
+    width: 100%;
     max-width: none;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
 @media only screen and (min-width: 768px) {
     .about-us {
         display: flex;
-        align-items: flex-start; 
+        align-items: flex-start;
     }
 
     .about-us-card {
-        width: calc(33.333% - 20px); 
-        margin-bottom: 0; 
+        width: calc(33.333% - 20px);
+        margin-bottom: 0;
     }
 }
 
@@ -428,26 +468,26 @@ background-attachment: fixed;
 /* Style the footer */
 footer {
     background-color: #222222; /* Dark gray footer background */
-    padding: 20px 10px;
+    padding: 20px 10px; /* Adjust padding for smaller screens */
     text-align: center;
 }
 
 .footer-links ul {
     list-style: none;
     margin-top: 10px;
-    padding: 0; 
+    padding: 0; /* Remove default padding for the list */
 }
 
 .footer-links li {
-    display: block;
-    margin-bottom: 10px; 
+    display: block; /* Display list items as blocks on smaller screens */
+    margin-bottom: 10px; /* Add space between list items */
 }
 
 .footer-links a {
     text-decoration: none;
-    color: #E0E0E0; 
+    color: #E0E0E0; /* White footer text */
     font-weight: bold;
-    display: block; 
+    display: block; /* Display links as blocks on smaller screens */
 }
 
 .ml13 .letter {
@@ -455,14 +495,16 @@ footer {
     line-height: 1em;
 }
 
+/* Media Query for larger screens (optional) */
 @media only screen and (min-width: 768px) {
     .footer-links li {
-        display: inline;
+        display: inline; /* Return to inline display for larger screens */
         margin-right: 20px;
-        margin-bottom: 0; 
+        margin-bottom: 0; /* Reset margin for larger screens */
     }
 
     .footer-links a {
         display: inline;
     }
 }
+
