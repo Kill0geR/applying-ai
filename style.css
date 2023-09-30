@@ -164,6 +164,11 @@ nav {
     text-decoration: none;
     color: #FC7E27;
     font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #FF9900
 }
 
 @media only screen and (max-width: 768px) {
