@@ -9,32 +9,33 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">
-                <img src="assets/logo.png" alt="Applying.AI Logo">
-            </div>
-            <div style="width:150px"></div>
-            <div class="moving">
-                <div id="stage" style="text-align: center;">
-                    <h1 class="ml13">Die Zukunft des Bewerbens</h1>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-                <script type="text/javascript" src="script.js"></script>
-                <script type="text/javascript" src="script2.js"></script>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="assets/logo.png" alt="Applying.AI Logo">
                 </div>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="javascript:scroll_to('#about-us-section')">About Us</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+                <div class="moving">
+                    <div id="stage" style="text-align: center;">
+                        <h1 class="ml13">Die Zukunft des Bewerbens</h1>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+                    <script type="text/javascript" src="script.js"></script>
+                    <script type="text/javascript" src="script2.js"></script>
+                    </div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="javascript:scroll_to('#about-us-section')">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <div class="sidenav">
         <div class="progress-bar">
             <div class="progress-container">
-                <div class="progress-bar" id="myBar" style="height: 0%;"></div>
+                <div class="progress-bar" id="myBar"></div>
             </div>
         </div>
     </div>
@@ -142,9 +143,11 @@
                 <img src="assets/abdul.jpg" alt="Team at Applying.Ai">
             </div>
         </div>
-        <div class="learn-more">
+
+        <div class="learn-more" style="margin: auto;">
             <a href="#" class="cta-button">Learn More</a>
         </div>
+
     </section>
     <footer>
         <div class="footer-logo">
