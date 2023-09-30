@@ -51,9 +51,10 @@ color:#FC7E27;
 
 @media only screen and (max-width: 768px) {
     .parallax-section {
-        background-size: contain;
+        background-attachment: scroll;
     }
 }
+
 
 .parallax-text {
     color: #fff;
@@ -210,9 +211,10 @@ background-attachment: fixed;
 
 @media only screen and (max-width: 768px) {
     .video-section {
-        background-size: contain;
+        background-attachment: scroll;
     }
 }
+
 
 .moving {
   width: 400px;
