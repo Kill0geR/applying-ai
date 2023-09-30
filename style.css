@@ -260,6 +260,29 @@ background-attachment: fixed;
 
 }
 
+.about-us {
+    flex-wrap: wrap; 
+}
+
+.about-us-card {
+    width: 100%; 
+    max-width: none;
+    margin-bottom: 20px; 
+}
+
+@media only screen and (min-width: 768px) {
+    .about-us {
+        display: flex;
+        align-items: flex-start; 
+    }
+
+    .about-us-card {
+        width: calc(33.333% - 20px); 
+        margin-bottom: 0; 
+    }
+}
+
+
 .contact-info {
     float: left; /* Align to the left */
     margin-right: 20px; /* Add some spacing between the logo and contact info */
@@ -280,6 +303,65 @@ background-attachment: fixed;
   margin-left: 10px;
 
 }
+
+.learn-more {
+    margin: auto;
+
+}
+
+.about-us {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-info {
+    float: none;
+    margin-right: 0;
+    margin-bottom: 20px;
+}
+
+.about-us-text {
+    max-width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.about-us h2 {
+    margin-bottom: 20px;
+}
+
+.about-us-card {
+    width: 100%;
+    max-width: none;
+    margin-bottom: 35px;
+}
+
+@media only screen and (min-width: 768px) {
+    .about-us {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .contact-info {
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .about-us-text {
+        max-width: 300px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+
+
 .person{
     margin-top: -25px;
 }
@@ -346,26 +428,41 @@ background-attachment: fixed;
 /* Style the footer */
 footer {
     background-color: #222222; /* Dark gray footer background */
-    padding: 20px 0;
+    padding: 20px 10px;
     text-align: center;
 }
 
 .footer-links ul {
     list-style: none;
     margin-top: 10px;
+    padding: 0; 
 }
 
 .footer-links li {
-    display: inline;
-    margin-right: 20px;
+    display: block;
+    margin-bottom: 10px; 
 }
 
 .footer-links a {
     text-decoration: none;
-    color: #E0E0E0; /* White footer text */
+    color: #E0E0E0; 
     font-weight: bold;
+    display: block; 
 }
+
 .ml13 .letter {
     display: inline-block;
     line-height: 1em;
+}
+
+@media only screen and (min-width: 768px) {
+    .footer-links li {
+        display: inline;
+        margin-right: 20px;
+        margin-bottom: 0; 
+    }
+
+    .footer-links a {
+        display: inline;
+    }
 }
