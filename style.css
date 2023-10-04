@@ -295,8 +295,8 @@ background-attachment: fixed;
     height: auto;
     margin-bottom: 20px;
     -webkit-mask-image: radial-gradient(ellipse 90% 100% at 50% 50%, black 0%, transparent 60%);
-    animation: zoomOut 1s ease-in-out forwards; /* Apply both animations */
-        transform-origin: 100 100; /* Set the transform origin to the top left corner */
+    animation: zoomOut 2.2s ease-in-out forwards;
+    transform-origin: 100 100;
     z-index: 1
     }
     @keyframes zoomOut {
@@ -375,7 +375,7 @@ background-attachment: fixed;
 
 .learn-more {
     margin: auto;
-
+    margin-left: 132px;
 }
 
 .about-us {
@@ -469,8 +469,7 @@ background-attachment: fixed;
     height: 100;
     opacity: 0;
     color: #ffffff;
-    text-align: justify;
-    margin: auto;
+    text-align: center;
     transition: all .2s ease-in-out;
     transform: translateY(-100%); /* Initially move text element above the card */
 }
