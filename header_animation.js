@@ -43,6 +43,7 @@ function sleep(ms) {
 }
 async function main(){
   while (true) {
+    await sleep(2200);
     startTextAnimation();
     await sleep(4000);
     updateTextContent()
