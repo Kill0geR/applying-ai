@@ -10,6 +10,12 @@ margin-top: 50px;
 font-size: 35px;
 }
 
+@media only screen and (max-width: 768px) {
+    .change_font {
+        margin-left: 75px;
+    }
+}
+
 .change_word {
 font-size: 55px;
 color:#FC7E27;
