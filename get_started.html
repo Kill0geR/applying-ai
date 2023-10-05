@@ -4,126 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Get Started - Applying AI</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="assets/logo_square.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="shortcut icon" href="assets/logo_square.png">
     <style>
         body {
-            font-family: "ApplyingAIFont", sans-serif;
-            background-color: #462BB0;
-            color: #E0E0E0;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            animation: fadeInBackground 2s ease-in-out forwards, fadeInWelcomeText 2s ease-in-out 1s forwards;
-            background-image: url({{ url_for('static', filename='assets/parallax_zwei.jpg') }});
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        
-        @font-face {
-          font-family: "ApplyingAIFont";
-          src: url({{ url_for('static', filename='assets/fonts/Mooli-Regular.ttf') }});
-        }
-        
-        @keyframes fadeInBackground {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-        
-        .welcome-text {
-            text-align: center;
-            margin-bottom: 20px;
-            font-size: 50px;
-            color: #FC7E27;
-        }
-        
-        .lebenslauf-text {
-            margin-top: 100px;
-        }
-        
-        .content {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: rgba(34, 34, 34, 0.9);
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            color: #E0E0E0;
-            text-align: center;
-        }
-        
-        h2 {
-            color: #FC7E27;
-        }
-        
-        p {
-            color: #FC7E27;
-            font-size: 1.2rem;
-            line-height: 1.6;
-        }
-        
-        a {
-            color: #FC7E27;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-        
-        .change_word {
-            font-size: 2rem;
-            color: #FFFFFF;
-        }
-        
-        a:hover {
-            color: #FF9900;
-        }
-        
-        footer {
-            background-color: #222222;
-            padding: 20px 10px;
-            text-align: center;
-        }
-        
-        .footer-links ul {
-            list-style: none;
-            margin-top: 10px;
-            padding: 0;
-        }
-        
-        .footer-links li {
-            display: block;
-            margin-bottom: 10px;
-        }
-        
-        .footer-links a {
-            text-decoration: none;
-            color: #E0E0E0;
-            font-weight: bold;
-            display: block;
-        }
-        
-        @media only screen and (min-width: 768px) {
-            .footer-links li {
-                display: inline;
-                margin-right: 20px;
-                margin-bottom: 0;
-            }
-        
-            .footer-links a {
-                display: inline;
-            }
-        }
+    font-family: "ApplyingAIFont", sans-serif;
+    background-color: #462BB0;
+    color: #E0E0E0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    animation: fadeInBackground 2s ease-in-out forwards, fadeInWelcomeText 2s ease-in-out 1s forwards;
+    background-image: url('assets/parallax_zwei.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@font-face {
+  font-family: "ApplyingAIFont";
+  src: url('assets/fonts/Mooli-Regular.ttf');
+}
+
+@keyframes fadeInBackground {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.welcome-text {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 50px;
+    color: #FC7E27;
+}
+
+.lebenslauf-text {
+    margin-top: 100px;
+}
+
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(34, 34, 34, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: #E0E0E0;
+    text-align: center;
+}
+
+h2 {
+    color: #FC7E27;
+}
+
+p {
+    color: #FC7E27;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+a {
+    color: #FC7E27;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.change_word {
+    font-size: 2rem;
+    color: #FFFFFF;
+}
+
+a:hover {
+    color: #FF9900;
+}
+
+footer {
+    background-color: #222222;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.footer-links ul {
+    list-style: none;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.footer-links li {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #E0E0E0;
+    font-weight: bold;
+    display: block;
+}
+
+@media only screen and (min-width: 768px) {
+    .footer-links li {
+        display: inline;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .footer-links a {
+        display: inline;
+    }
+}
     </style>
 </head>
 <body>
@@ -133,7 +132,8 @@
 
     <section class="content">
         <h2>Starten Sie mit der Lebenslauf Analyse</h2>
-        <p>Lade deinen Lebenslauf hoch: <a href="#" onclick="parseCV()">Lebenslauf analysieren</a></p>
+        <p>Lade deinen Lebenslauf hoch: <input type="file" id="avatar" name="parseCV()" accept=".docx, .pdf" /></p>
+        <p style="color: #FF9900;">Lebenslauf analysieren</p>
     </section>
 
     <div class="lebenslauf-text">
@@ -148,8 +148,15 @@
     </div>
 
     <script>
-        function parseCV() {
-            alert('Test');
+         function parseCV() {
+            const input = document.getElementById('cvUpload');
+            const file = input.files[0];
+
+            if (file) {
+                alert('Ausgewählter Lebenslauf: ' + file.name);
+            } else {
+                alert('Bitte wählen Sie einen Lebenslauf aus.');
+            }
         }
     </script>
 </body>
