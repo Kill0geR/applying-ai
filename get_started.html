@@ -20,13 +20,18 @@
             justify-content: center;
             min-height: 100vh;
             animation: fadeInBackground 2s ease-in-out forwards, fadeInWelcomeText 2s ease-in-out 1s forwards;
-            background-image: url('assets/parallax_zwei.jpg');
+            background-image: url({{ url_for('static', filename='assets/parallax_zwei.jpg') }});
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
         }
-
+        
+        @font-face {
+          font-family: "ApplyingAIFont";
+          src: url({{ url_for('static', filename='assets/fonts/Mooli-Regular.ttf') }});
+        }
+        
         @keyframes fadeInBackground {
             from {
                 opacity: 0;
@@ -35,18 +40,18 @@
                 opacity: 1;
             }
         }
-
+        
         .welcome-text {
             text-align: center;
             margin-bottom: 20px;
             font-size: 50px;
             color: #FC7E27;
         }
-
+        
         .lebenslauf-text {
             margin-top: 100px;
         }
-
+        
         .content {
             max-width: 800px;
             margin: 20px auto;
@@ -57,63 +62,64 @@
             color: #E0E0E0;
             text-align: center;
         }
-
+        
         h2 {
             color: #FC7E27;
         }
-
+        
         p {
+            color: #FC7E27;
             font-size: 1.2rem;
             line-height: 1.6;
         }
-
+        
         a {
             color: #FC7E27;
             text-decoration: none;
             font-weight: bold;
             transition: color 0.3s;
         }
-
+        
         .change_word {
             font-size: 2rem;
             color: #FFFFFF;
         }
-
+        
         a:hover {
             color: #FF9900;
         }
-
+        
         footer {
             background-color: #222222;
             padding: 20px 10px;
             text-align: center;
         }
-
+        
         .footer-links ul {
             list-style: none;
             margin-top: 10px;
             padding: 0;
         }
-
+        
         .footer-links li {
             display: block;
             margin-bottom: 10px;
         }
-
+        
         .footer-links a {
             text-decoration: none;
             color: #E0E0E0;
             font-weight: bold;
             display: block;
         }
-
+        
         @media only screen and (min-width: 768px) {
             .footer-links li {
                 display: inline;
                 margin-right: 20px;
                 margin-bottom: 0;
             }
-
+        
             .footer-links a {
                 display: inline;
             }
