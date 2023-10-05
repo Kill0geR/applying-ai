@@ -132,8 +132,8 @@ footer {
 
     <section class="content">
         <h2>Starten Sie mit der Lebenslauf Analyse</h2>
-        <p>Lade deinen Lebenslauf hoch: <input type="file" id="avatar" name="parseCV()" accept=".docx, .pdf" /></p>
-        <p style="color: #FF9900;">Lebenslauf analysieren</p>
+        <p>Lade deinen Lebenslauf hoch: <input type="file" id="cv_upload" name="cv_upload" accept=".docx, .pdf" /></p>
+        <p style="color: #FF9900;"><button type="submit">Lebenslauf analysieren</button></p>
     </section>
 
     <div class="lebenslauf-text">
@@ -147,17 +147,5 @@ footer {
         <script type="text/javascript" src="typing_animation_getstarted.js"></script>
     </div>
 
-    <script>
-         function parseCV() {
-            const input = document.getElementById('cvUpload');
-            const file = input.files[0];
-
-            if (file) {
-                alert('Ausgewählter Lebenslauf: ' + file.name);
-            } else {
-                alert('Bitte wählen Sie einen Lebenslauf aus.');
-            }
-        }
-    </script>
 </body>
 </html>
